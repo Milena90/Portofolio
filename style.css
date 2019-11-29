@@ -1,0 +1,218 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXX FIN RESET CSS XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.h-100{
+	height: 100%;
+}
+@font-face {
+	font-family: "BroshK";
+	src: url("fonts/BroshK.ttf");
+  }
+#titre-flex{
+	display: flex;
+	align-items: center;
+}
+.brd{
+	border: 2px solid red;
+}
+.rlt{
+	position: relative;
+}
+.absl{
+	position: absolute;
+}
+header{
+	position: relative;
+	background-image: url("asset/images/mee.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position-y: -320px;
+	height: 100vh;
+	width: 100%;
+
+}
+.filtre{
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+nav li{
+	list-style: none;
+}
+.navbar{
+	font-family: 'Titillium Web';
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+}
+.navbar li{
+	display: inline-block;
+	list-style: outside none none;
+	margin: .5em 1em;
+}
+.navbar a{
+	padding: .5em .8em;
+	color: white;
+	position: relative;
+	text-decoration: none;
+	font-size: 20px;
+}  
+.navbar a::before,
+.navbar a::after{
+	content: '';
+	height: 14px;
+	width: 14px;
+	position: absolute;
+	transition: all .35s ease;
+	opacity: 0;
+}  
+.navbar a::before{
+	right: 0;
+	top: 0;
+	border-top: 3px solid #cc0454;
+	border-right: 3px solid #cc0454;
+	transform: translate(-100%, 50%);
+}  
+.navbar a:after{
+	left: 0;
+	bottom: 0;
+	border-bottom: 3px solid #cc0454;
+	border-left: 3px solid #cc0454;
+	transform: translate(100%, -50%)
+}  
+.navbar a:hover:before,
+.navbar a:hover:after{
+	transform: translate(0,0);
+	opacity: 1;
+}
+.navbar a:hover{
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+#titre{
+	margin-left: 150px;
+}
+header h1{
+	font-family: "BroshK";
+	color: white;
+	font-size: 120px;
+}
+.nom{
+	font-family: "BroshK";
+	color: white;
+	font-size: 50px;
+	margin-left: 200px;
+}
+#social-media{
+	position: absolute;
+	right: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	z-index: 10000;
+}
+.icon-media{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-media{
+	width: 52px;
+	height:52px ;	
+}
+.marge-media{
+	margin: 10px;	
+}
+.border-media{
+	padding: 10px;
+	border-radius: 35% 0%;
+	overflow: hidden;
+}
+.background-fb:hover{
+	background: linear-gradient(to bottom left, #3b5998, #4e79ce, #3b5998);
+}
+.background-git:hover{
+	background: linear-gradient(to bottom left, #24292e, #5f6c77, #24292e);
+}
+.background-insta:hover{
+	background: linear-gradient(to bottom left, #7c39b4, #c8225b, #ee060c, #f6c102);
+}
+.background-link:hover{
+	background: linear-gradient(to bottom left, #005a87, #0077b5, #005a87);
+}
+.transition-social{
+	position: absolute;
+	top: -55px;
+}
+.border-media:hover .transition-social{
+	transition: transform 0.5s ease-in-out;
+	transform: translateY(65px);
+}
+.social-center{
+	bottom:1px;
+	left: 1px;
+}
+.border-media:hover .opacite-social{
+	transition: opacity 0.5s ease-in-out;
+	opacity: 0;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXX FIN HEADER XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.titre{
+	font-family: 'Titillium Web';
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
